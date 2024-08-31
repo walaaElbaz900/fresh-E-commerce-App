@@ -1,0 +1,119 @@
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  place-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.category-cards {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.category-cards:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.Onepic {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  .category-cards {
+      padding: 10px;
+  }
+  .category-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.wishlist-button {
+  background-color: transparent;
+  color: rgb(130, 130, 130);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cart-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.wishlist-button:hover, .cart-button:hover {
+  transform: scale(1.15);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.2);
+}
+
+.search-container input[type="text"]::placeholder {
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .search-container input[type="text"] {
+      width: 90%;
+  }
+}
+.star {
+  font-size: 24px;
+  color: #ddd; /* Grey color for empty stars */
+  margin: 0 2px;
+  transition: color 0.3s ease;
+}
+
+.star.filled {
+  color: #ff6f61; /* Color for filled stars */
+}
+.wishlist-button.red {
+  color: red;
+}

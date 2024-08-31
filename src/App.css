@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+
+}
+body  {
+  font-family: "system-ui";
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+li {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--link-color);
+}
+
+:root {
+  --border-color-lightmode: rgb(214, 214, 214);
+  --main-color: #111827;
+  --main-color-2: #1F2937;
+  --main-color-lighter: #1467db;
+  --main-color-lightest: #1d7bff;
+}
+
+.Container-Spacing{
+    margin-top: 100px;
+}
+.Container-Width{
+  max-width:90%;
+  margin-left:auto;
+  margin-right: auto;
+}
