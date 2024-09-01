@@ -18,7 +18,7 @@ import './App.css';
 function App() {
   return (
     // <UserContextProvider>
-    <Router>
+    <Router >
       <Routes>
         <Route path="/" element={<PrivateRoute element={Home} />} />
         <Route path="/categories"  element={<PrivateRoute element= {CategoriesPage} />} />
@@ -27,8 +27,8 @@ function App() {
         <Route path="brands"  element={<PrivateRoute element={BrandsPage} />} />
         <Route path="products"  element={<PrivateRoute element={ProductsPage} />} />
         <Route path="login"  element={<LoginPage/>} />
-        <Route path="signup"  element={<PrivateRoute element={SignupPage} />} />
-        <Route path="reset"  element={<PrivateRoute element={ResetPassword} />} />
+        <Route path="signup"  element={<SignupPage/>}/> 
+        <Route path="reset"  element={<ResetPassword/>} />
         <Route path="/products/:productId"  element={<PrivateRoute element={ProductPage} />} />
 
       </Routes>
